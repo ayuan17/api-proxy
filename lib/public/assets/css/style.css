@@ -1,0 +1,42 @@
+
+#page{
+    height: 100%;
+    margin: 0;
+}
+
+#purplepollen {
+    font-size: 80px;
+}
+
+#landing {
+    background-image: url(http://atmedia.imgix.net/b16e3a95324826a16eaeb71ba4b70029163760ee?auto=compress&w=1200.0&h=800.0&fit=crop);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sansita', sans-serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 50px;
+}
+
+#user-input {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.recipe {
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    float:left;
+    justify-content: center;
+    align-items:center;
+
+}
