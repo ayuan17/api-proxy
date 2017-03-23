@@ -9,7 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -17,29 +17,58 @@
 
 <body id="page">
 
-    <header id="landing">
-        <h1 id="purplepollen">What should I make?</h1>
-        <h3></h3>
-        <button type="button" class="btn btn-default" id="test">Submit</button>
-    </header>
+    <div id="landing">
 
-<div class="panel panel-default" id="user-input">
-  <div class="panel-heading">Input Ingredients here:</div>
-    <div class="panel-body">
-      <textarea class="form-control" rows="10"></textarea>
-<br>
-        <button type="button" class="btn btn-default">Submit</button>
+        <h1 id="purplepollen">what should i eat?</h1>
+
+        <div id="buttons">
+
+        <!-- <a onclick="initScroll('cook'); return false;" href="#" id="button1">cook</a>
+
+        <a onclick="initScroll('yelp'); return false;" href="#" id="button2">dine out</a>
+
+        <a id="top" onclick="toTop(); return false;" href="#">Changed yo mind?</a> -->
+
+
+
+            <button onclick="initScroll('cook'); return false;" href="#" type="button" class="btn btn-default" id="button1">get cookin'</button>
+
+            <button onclick="initScroll('yelp'); return false;" href="#" type="button" class="btn btn-default" id="button2">dinin' out</button>
+
+            <a id="top" onclick="toTop(); return false;" href="#">Changed yo mind?</a>
+
+        </div>
+
+
     </div>
+
+<div id="cook">Cook
+    <div class="panel panel-default" id="user-input">
+
+        <div class="panel-heading">Input Ingredients here:</div>
+
+            <div class="panel-body">
+
+                <textarea class="form-control" rows="3"></textarea>
+<br>
+                <button type="button" class="btn btn-default">Submit</button>
+
+    </div>
+
+</div>
+   <div class="recipe" id="food2fork">Food2Fork</div>
 </div>
 
 
 
+<div id="yelp">Yelp</div>
 
-  <div class="recipe" id="food2fork"></div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script src="assets/javascript/transition.js"></script>
 <script src="assets/javascript/main.js"></script>
 </body>
 

@@ -1,4 +1,8 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 #page{
     height: 100%;
     margin: 0;
@@ -6,7 +10,11 @@
 
 #purplepollen {
     font-size: 80px;
+    margin-bottom: 40px;
+
+
 }
+
 
 #landing {
     background-image: url(http://atmedia.imgix.net/b16e3a95324826a16eaeb71ba4b70029163760ee?auto=compress&w=1200.0&h=800.0&fit=crop);
@@ -16,10 +24,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Shrikhand', cursive;;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-bottom: 50px;
+    text-shadow: 2px 0 black, 0 1px black, 1px 0 black, 0 2px black;
+
+}
+
+#button1 {
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+#button2 {
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+    font-size: 30px;
+    opacity: 0.8;
+
 }
 
 #user-input {
@@ -29,19 +54,84 @@
 
 #food2fork {
     margin: 0 auto;
-    border-style: solid;
-    border-width: 5px;
-    width: 100px;
-    height: 100px;
     margin: 20px;
-    display: flex;
-    justify-content: center;
+    justify-content: column;
     align-items:center;
+    float: left;
+    width: 960px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
 
 }
 
+#cook {
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+}
+
+#yelp{
+    height: 100vh;
+    background: red;
+}
+
+#top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: honeydew;
+    text-decoration: none;
+}
+
+/*a#button1{
+    margin: 40px;
+    height: 60px;
+    width: 250px;
+    font-size: 30px;
+    color: white;
+    background: white;
+    opacity: 0.8;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+a#button2{
+    margin: 40px;
+    border-style: solid 10px black;
+    font-size: 30px;
+    color:white;
+    background: white;
+    opacity: 0.8;
+    border-radius: 15px;
+    text-decoration: none;
+}*/
+/*.container {
+    width: px;
+    height: 960px;
+    align-items: center;
+    margin: 0;
+}*/
+
+
+
 img{
+    position: relative;
     width: 200px;
     height: 200px;
     margin: 20px;
 }
+
+text{
+    position: absolute;
+
+}
+
+
+
+
+#test {
+    display: inline-block;
+}
+
