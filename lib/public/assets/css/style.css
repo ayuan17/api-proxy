@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Shrikhand', cursive;;
+    font-family: 'Sansita', cursive;
     color: white;
     text-shadow: 2px 0 black, 0 1px black, 1px 0 black, 0 2px black;
 
@@ -52,15 +52,14 @@
     max-width: 600px;
     margin: 0 auto;
     top: 50px;
-
+    font-family: 'Sansita', cursive;
 
 }
 
 #food2fork {
     margin: 0 auto;
     margin-top: 20px;
-    margin-left: 170px;
-
+    margin-left: 160px;
     align-items:center;
     float: left;
     width: 600px;
