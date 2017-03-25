@@ -47,33 +47,42 @@
 
 }
 
-#user-input {
+.panel {
+    position: relative;
     max-width: 600px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
+    top: 50px;
+
+
 }
 
 #food2fork {
     margin: 0 auto;
-    margin: 20px;
-    justify-content: column;
+    margin-top: 20px;
+    margin-left: 170px;
+
     align-items:center;
     float: left;
-    width: 960px;
-    height: 250px;
+    width: 600px;
+    height: 400px;
     display: flex;
-    overflow: hidden;
+    position: relative;
+    overflow: auto;
+    top: 40px;
 
 }
+
+
 
 #cook {
     align-items: center;
     height: 100vh;
-    background: yellow;
+    background-image: url(http://i.huffpost.com/gen/2867908/images/o-FARM-TO-TABLE-facebook.jpg);
 }
 
 #yelp{
     height: 100vh;
-    background: red;
+    background-image: url(http://atlanta-food-critic.com/wp-content/uploads/2015/09/ponce-city-market-atlanta.jpg);
 }
 
 #top{
@@ -85,54 +94,39 @@
     text-decoration: none;
 }
 
-/*a#button1{
-    margin: 40px;
-    height: 60px;
-    width: 250px;
-    font-size: 30px;
-    color: white;
-    background: white;
-    opacity: 0.8;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-a#button2{
-    margin: 40px;
-    border-style: solid 10px black;
-    font-size: 30px;
-    color:white;
-    background: white;
-    opacity: 0.8;
-    border-radius: 15px;
-    text-decoration: none;
-}*/
-/*.container {
-    width: px;
-    height: 960px;
-    align-items: center;
-    margin: 0;
-}*/
-
-
-
 img{
+    border: 5px solid black;
     position: relative;
-    width: 200px;
+    width: 180px;
     height: 200px;
-    margin: 20px;
-    border-radius: 5px;
-}
-
-text{
-    position: absolute;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
 
 }
 
-
-
-
-#test {
-    display: inline-block;
+#food2fork p{
+    color: white;
+    position:absolute;
+    width: 100px;
+    z-index: 1;
+    text-shadow: 4px  4px 2px black;
+    top: 120px;
+    position-left: 30px;
+    margin-left: 25px;
+    font-family: 'Palanquin Dark', sans-serif;
 }
+
+#food2fork p:hover {
+    color: #ffff66;
+}
+
+.recipe{
+    top: 20px;
+}
+
+
+
+
+
 
