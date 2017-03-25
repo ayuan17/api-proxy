@@ -1,8 +1,10 @@
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 #page{
     height: 100%;
     margin: 0;
@@ -11,14 +13,12 @@
 #purplepollen {
     font-size: 80px;
     margin-bottom: 40px;
-    animation: blinker 2s linear infinite;
+    animation: blinker 3s linear infinite;
 }
 
 @keyframes blinker {
   50% { opacity: 0; }
 }
-
-
 
 #landing {
     background-image: url(https://i2.wp.com/media.boingboing.net/wp-content/uploads/2014/12/shutterstock_97415516.jpg);
@@ -31,40 +31,32 @@
     font-family: 'Sansita', cursive;
     color: white;
     text-shadow: 2px 0 black, 0 1px black, 1px 0 black, 0 2px black;
-
 }
 
-#button1 {
+#button1, #button2 {
     width: 250px;
     height: 60px;
     margin: 20px;
     font-size: 30px;
     opacity: 0.8;
-    /*transition: width 2s, height 2s, transform 2s;*/
+    border-radius: 20px;
 }
 
-/*#button1:hover {
-    width: 300px;
-    height: 300px;
-    transform: rotate(180deg);
-}*/
-
-#button2 {
-    width: 250px;
-    height: 60px;
-    margin: 20px;
-    font-size: 30px;
-    opacity: 0.8;
-
-}
-
-.panel {
+#panel {
     position: relative;
     max-width: 600px;
     margin: 0 auto;
     top: 50px;
     font-family: 'Sansita', cursive;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 
+#panelHead{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #container {
@@ -84,10 +76,9 @@
     position: relative;
     overflow: auto;
     top: 40px;
+    border-radius: 20px;
 
 }
-
-
 
 #cook {
     align-items: center;
@@ -138,6 +129,85 @@ a img{
 
 .recipe{
     top: 20px;
+}
+
+
+
+
+
+
+
+/*Trenton's CSS for slider*/
+
+/*New CSS*/
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 296%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {display:none;
+    margin-left: 25%;
+    width: 50%
+}
+
+.mySlides *{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+
+}
+
+/* Fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+img{
+    width: 25%;
+    margin: auto;
 }
 
 

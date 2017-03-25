@@ -2,8 +2,8 @@
 <html lang="en" id="page">
 <head>
     <meta charset="UTF-8">
+
     <title>Purple Pollen</title>
-    <!-- Latest compiled and minified CSS -->
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Taviraj" rel="stylesheet">
-
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -47,13 +46,13 @@
 
 <div id="cook">
 
-      <div class="panel panel-success">
+      <div class="panel panel-danger" id="panel">
 
-        <div class="panel-heading">what do ya got?</div>
+        <div class="panel-heading" id="panelHead">what do ya got?</div>
 
             <div class="panel-body">
 
-              <textarea class="form-control" rows="2" placeholder="input ingredients"></textarea>
+              <textarea type="text" class="form-control" rows="2" placeholder="input ingredients"></textarea>
               <br>
               <button type="button" class="btn btn-default">search</button>
 
@@ -61,18 +60,31 @@
 
 
       </div>
-  <dir id="container">
-    <div class="recipe" id="food2fork">
 
-    </div>
+  <div id="container">
 
-  </dir>
+    <div class="recipe" id="food2fork"></div>
+
+  </div>
 
 </div>
 
+<!-- Trenton's code -->
+<div id="yelp">
+
+  <div id="yelpContainer">
+
+    <div id="autocomplete"></div>
+      <div id="eat-out"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
 
 
-<div id="yelp"></div>
+</div>
+
+<!-- Trenton's code -->
 
 <footer class="footer" style="text-align: center; background-color: grey; height: 30px; color:white;">Copyright © Purple Pollen 2017</footer>
 
@@ -81,6 +93,10 @@
 <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 <script src="assets/javascript/transition.js"></script>
 <script src="assets/javascript/main.js"></script>
+
+<!-- Trenton's code -->
+<script src="assets/javascript/yelp.js"></script>
+
 </body>
 
 
